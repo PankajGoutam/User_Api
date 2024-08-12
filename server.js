@@ -8,7 +8,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors({
   credentials: true,
-  origin: 'https://katnidaily.netlify.app/'  
+  origin: ['http://localhost:5173','http://localhost:4173','https://katnidaily.netlify.app']  
 }));
 
 app.use('/api/v1/users', userRoutes);
